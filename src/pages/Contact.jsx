@@ -1,6 +1,7 @@
 import { Box, Button, Container, Grid, Stack, Typography } from '@mui/material'
 import { useEffect } from 'react'
 import AnimatedSection from '../components/AnimatedSection/AnimatedSection'
+import shop3 from '../assets/interior-images/shop-3.png'
 
 function Contact() {
   useEffect(() => {
@@ -11,7 +12,7 @@ function Contact() {
     <Box sx={{ py: { xs: 10, md: 14 } }}>
       <Container maxWidth="lg">
         <Grid container spacing={4} alignItems="center">
-          <Grid size={{ xs: 12, md: 6 }}>
+          <Grid item xs={12} md={6}>
             <AnimatedSection>
               <Stack spacing={2}>
                 <Typography variant="overline" color="primary">
@@ -29,12 +30,12 @@ function Contact() {
               </Stack>
             </AnimatedSection>
           </Grid>
-          <Grid size={{ xs: 12, md: 6 }}>
+          <Grid item xs={12} md={6}>
             <AnimatedSection>
               <Box sx={{ borderRadius: 4, overflow: 'hidden', height: 360, bgcolor: 'grey.900' }}>
                 <Box
                   component="img"
-                  src="./src/assets/interior images/Screenshot 2026-07-03 at 9.35.43 PM.png"
+                  src={shop3}
                   alt="Barber shop interior"
                   sx={{ width: '100%', height: '100%', objectFit: 'cover', opacity: 0.9 }}
                 />

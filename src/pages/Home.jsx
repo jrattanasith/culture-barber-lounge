@@ -37,16 +37,24 @@ function Home() {
             <Typography variant="body1" color="text.secondary" sx={{ mb: 4, maxWidth: 700 }}>
               We keep it simple—great cuts, attention to detail, and styles that leave you looking and feeling your best.
             </Typography>
-            <Grid container spacing={3}>
-              {team.map((member) => (
-                <Grid size={{ xs: 12, md: 4 }} key={member.name}>
-                  <TeamCard member={member} />
+            <Grid container spacing={3} justifyContent="center">
+              {team.slice(0, 3).map((member) => (
+                <Grid
+                  item
+                  xs={12}
+                  md={4}
+                  key={member.name}
+                  sx={{ display: 'flex', justifyContent: 'center' }}
+                >
+                  <Box sx={{ width: '100%', maxWidth: 320, height: '100%' }}>
+                    <TeamCard member={member} />
+                  </Box>
                 </Grid>
               ))}
             </Grid>
           </Box>
           <Box sx={{ display: 'flex', justifyContent: 'center' }}>
-            <Button variant="outlined" color="secondary" href="/team">
+            <Button variant="outlined" color="secondary" href="#/team">
               Meet the full team
             </Button>
           </Box>

@@ -20,8 +20,8 @@ function Gallery() {
           </Stack>
         </AnimatedSection>
         <Grid container spacing={3}>
-          {gallery.map((item) => (
-            <Grid size={{ xs: 12, md: 6 }} key={item.title}>
+          {gallery.map((item, idx) => (
+            <Grid item xs={12} md={6} key={idx}>
               <AnimatedSection>
                 <Box sx={{ borderRadius: 4, overflow: 'hidden' }}>
                   <Box

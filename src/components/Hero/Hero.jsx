@@ -1,6 +1,6 @@
 import { Box, Button, Container, Stack, Typography } from '@mui/material'
 import { motion } from 'framer-motion'
-
+import shop1 from '../../assets/interior-images/shop-1.png'
 
 function Hero() {
   return (
@@ -10,8 +10,7 @@ function Hero() {
         position: 'relative',
         display: 'flex',
         alignItems: 'center',
-        backgroundImage:
-          'linear-gradient(90deg, rgba(0,0,0,0.82) 0%, rgba(0,0,0,0.45) 50%, rgba(0,0,0,0.72) 100%), url("./src/assets/interior images/Screenshot 2026-07-03 at 9.35.43 PM.png")',
+        backgroundImage: `linear-gradient(90deg, rgba(0,0,0,0.82) 0%, rgba(0,0,0,0.45) 50%, rgba(0,0,0,0.72) 100%), url(${shop1})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
       }}
@@ -38,7 +37,7 @@ function Hero() {
               <Button variant="contained" color="primary" href="https://booksy.com/en-us/1305466_andrew-li_barber-shop_103424_benicia?do=invite&_branch_match_id=1449877403488860804&utm_medium=profile_share_from_profile&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXT07J0UvKz88urtRLzs%2FVT8lzSik3jiopjkiyrytKTUstKsrMS49PKsovL04tsnXOKMrPTQUA1TmotjwAAAA%3D" target="_blank" rel="noreferrer">
                 Book Now
               </Button>
-              <Button variant="outlined" color="secondary" href="/services">
+              <Button variant="outlined" color="secondary" href="#/services">
                 Explore Services
               </Button>
             </Stack>
