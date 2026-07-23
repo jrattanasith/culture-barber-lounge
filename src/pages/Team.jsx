@@ -1,13 +1,13 @@
-import { Box, Container, Grid, Stack, Typography } from '@mui/material'
-import { useEffect } from 'react'
-import AnimatedSection from '../components/AnimatedSection/AnimatedSection'
-import TeamCard from '../components/TeamCard/TeamCard'
-import team from '../data/team'
+import { Box, Container, Grid, Stack, Typography } from "@mui/material";
+import { useEffect } from "react";
+import AnimatedSection from "../components/AnimatedSection/AnimatedSection";
+import TeamCard from "../components/TeamCard/TeamCard";
+import team from "../data/team";
 
 function Team() {
   useEffect(() => {
-    document.title = 'Team | Culture Barber Lounge'
-  }, [])
+    document.title = "Team | Culture Barber Lounge";
+  }, []);
 
   return (
     <Box sx={{ py: { xs: 10, md: 14 } }}>
@@ -19,7 +19,9 @@ function Team() {
             </Typography>
             <Typography variant="h2">Meet our team of barbers</Typography>
             <Typography color="text.secondary">
-              Every cut is done with care, precision, and attention to detail. Because a great haircut isn't just about looking good—it's about feeling confident.
+              Every cut is done with care, precision, and attention to detail.
+              Because a great haircut isn't just about looking good—it's about
+              feeling confident.
             </Typography>
           </Stack>
         </AnimatedSection>
@@ -34,7 +36,7 @@ function Team() {
         </Grid>
       </Container>
     </Box>
-  )
+  );
 }
 
-export default Team
+export default Team;

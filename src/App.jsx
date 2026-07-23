@@ -4,7 +4,6 @@ import Navbar from './components/Navbar/Navbar'
 import Footer from './components/Footer/Footer'
 import FloatingBookButton from './components/FloatingBookButton/FloatingBookButton'
 import Home from './pages/Home'
-import Services from './pages/Services'
 import Team from './pages/Team'
 import Gallery from './pages/Gallery'
 import Contact from './pages/Contact'
@@ -19,7 +18,6 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/services" element={<Services />} />
           <Route path="/team" element={<Team />} />
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/contact" element={<Contact />} />

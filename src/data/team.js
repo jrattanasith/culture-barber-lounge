@@ -1,24 +1,22 @@
+import andrewLi from '../assets/barber-photos/Andrew-Li.jpeg'
+import ericLaxamana from '../assets/barber-photos/Eric-Laxamana.jpeg'
+import nateDiaz from '../assets/barber-photos/Nate-Diaz.jpeg'
+
 const team = [
   {
     name: 'Andrew Li',
-    role: 'Lead Barber',
-    image:
-      'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=900&q=80',
-    bio: 'Specializes in various cuts.',
+    image: andrewLi,
+    booksy: 'http://barberxandy.booksy.com/a/',
   },
   {
-    name: 'Noah Bennett',
-    role: 'Beard Specialist',
-    image:
-      'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=900&q=80',
-    bio: 'Renowned for precise line work and tailored beard design.',
+    name: 'Eric Laxamana',
+    image: ericLaxamana,
+    booksy: 'http://laxameric.booksy.com/a/',
   },
   {
-    name: 'Elias Cruz',
-    role: 'Grooming Artist',
-    image:
-      'https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=900&q=80',
-    bio: 'Creates elevated grooming rituals with a luxury finish.',
+    name: 'Nate Diaz',
+    image: nateDiaz,
+    booksy: 'http://blndzbynateculturebarberlounge.booksy.com/a/',
   },
 ]
 

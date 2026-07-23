@@ -18,7 +18,6 @@ import MenuIcon from '@mui/icons-material/Menu'
 
 const navItems = [
   { label: 'Home', to: '/' },
-  { label: 'Services', to: '/services' },
   { label: 'Team', to: '/team' },
   { label: 'Gallery', to: '/gallery' },
   { label: 'Contact', to: '/contact' },
@@ -54,9 +53,14 @@ function Navbar() {
       >
         <Toolbar sx={{ justifyContent: 'space-between', py: 1, px: { xs: 2, md: 4 } }}>
           <Button component={Link} to="/" color="inherit" sx={{ p: 0, minWidth: 0 }}>
-            <Typography variant="h5" sx={{ letterSpacing: '0.18em' }}>
-              Culture Barber Lounge
-            </Typography>
+            <Stack spacing={0}>
+              <Typography variant="h5" sx={{ letterSpacing: '0.18em', lineHeight: 1 }}>
+                Culture Barber Lounge
+              </Typography>
+              <Typography variant="caption" sx={{ fontSize: '0.7rem', opacity: 0.8, lineHeight: 1 }}>
+                Benicia, CA
+              </Typography>
+            </Stack>
           </Button>
           <Box sx={{ display: { xs: 'none', md: 'flex' }, gap: 1 }}>
             {navItems.map((item) => (
@@ -66,7 +70,22 @@ function Navbar() {
             ))}
           </Box>
           <Stack direction="row" spacing={1} alignItems="center">
-            <Button variant="outlined" color="secondary" sx={{ display: { xs: 'none', md: 'inline-flex' } }} href="https://booksy.com/en-us/1305466_andrew-li_barber-shop_103424_benicia?do=invite&_branch_match_id=1449877403488860804&utm_medium=profile_share_from_profile&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXT07J0UvKz88urtRLzs%2FVT8lzSik3jiopjkiyrytKTUstKsrMS49PKsovL04tsnXOKMrPTQUA1TmotjwAAAA%3D" target="_blank" rel="noreferrer">
+            <Button 
+              variant="contained" 
+              href="https://booksy.com/en-us/1800376_culture-barber-lounge_barber-shop_103424_benicia?utm_source=ig&utm_medium=social&utm_content=link_in_bio#ba_s=dl_1" 
+              target="_blank" 
+              rel="noreferrer"
+              sx={{ 
+                display: { xs: 'none', md: 'inline-flex' },
+                bgcolor: 'white',
+                color: 'black',
+                borderRadius: '50px',
+                fontWeight: 600,
+                '&:hover': {
+                  bgcolor: '#f0f0f0',
+                },
+              }}
+            >
               Book Now
             </Button>
             <IconButton color="inherit" sx={{ display: { xs: 'inline-flex', md: 'none' } }} onClick={() => setMobileOpen(true)}>

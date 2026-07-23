@@ -4,8 +4,7 @@ import CalendarMonthIcon from '@mui/icons-material/CalendarMonth'
 function FloatingBookButton() {
   return (
     <Fab
-      color="primary"
-      href="https://booksy.com/en-us/1305466_andrew-li_barber-shop_103424_benicia?do=invite&_branch_match_id=1449877403488860804&utm_medium=profile_share_from_profile&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXT07J0UvKz88urtRLzs%2FVT8lzSik3jiopjkiyrytKTUstKsrMS49PKsovL04tsnXOKMrPTQUA1TmotjwAAAA%3D"
+      href="https://booksy.com/en-us/1800376_culture-barber-lounge_barber-shop_103424_benicia?utm_source=ig&utm_medium=social&utm_content=link_in_bio#ba_s=dl_1"
       target="_blank"
       rel="noreferrer"
       sx={{
@@ -14,6 +13,11 @@ function FloatingBookButton() {
         right: 24,
         zIndex: 1300,
         boxShadow: '0 16px 40px rgba(135,174,115,0.25)',
+        bgcolor: 'white',
+        color: 'black',
+        '&:hover': {
+          bgcolor: '#f0f0f0',
+        },
       }}
       aria-label="Book now"
     >

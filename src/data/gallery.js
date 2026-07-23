@@ -8,14 +8,14 @@ import hair7 from '../assets/interior-images/Haircuts/Haircut 7.jpeg'
 import hair8 from '../assets/interior-images/Haircuts/Haircut 8.jpeg'
 
 const gallery = [
-  { title: 'Precision Lineup', image: hair1 },
-  { title: 'Precision Lineup', image: hair2 },
-  { title: 'Precision Lineup', image: hair3 },
-  { title: 'Precision Lineup', image: hair4 },
-  { title: 'Precision Lineup', image: hair5 },
-  { title: 'Precision Lineup', image: hair6 },
-  { title: 'Precision Lineup', image: hair7 },
-  { title: 'Precision Lineup', image: hair8 },
+  // { title: 'Precision Lineup', image: hair1 },
+  // { title: 'Precision Lineup', image: hair2 },
+  // { title: 'Precision Lineup', image: hair3 },
+  // { title: 'Precision Lineup', image: hair4 },
+  // { title: 'Precision Lineup', image: hair5 },
+  // { title: 'Precision Lineup', image: hair6 },
+  // { title: 'Precision Lineup', image: hair7 },
+  // { title: 'Precision Lineup', image: hair8 },
 ]
 
 export default gallery
