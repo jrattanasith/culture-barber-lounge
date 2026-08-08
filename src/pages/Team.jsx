@@ -17,11 +17,11 @@ function Team() {
             <Typography variant="overline" color="primary">
               Our Barbers
             </Typography>
-            <Typography variant="h2">Meet our team of barbers</Typography>
+            <Typography variant="h2">Meet the Team</Typography>
             <Typography color="text.secondary">
-              Every cut is done with care, precision, and attention to detail.
-              Because a great haircut isn't just about looking good—it's about
-              feeling confident.
+              The team behind the experience. Skilled barbers. Quality service.
+              Consistent results. Here to build confidence and connection within
+              our community. Book your appointment below.
             </Typography>
           </Stack>
         </AnimatedSection>

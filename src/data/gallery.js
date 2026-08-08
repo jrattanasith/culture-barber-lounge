@@ -1,21 +1,25 @@
-import hair1 from '../assets/interior-images/Haircuts/Haircut 1.jpeg'
-import hair2 from '../assets/interior-images/Haircuts/Haircut 2.jpeg'
-import hair3 from '../assets/interior-images/Haircuts/Haircut 3.jpeg'
-import hair4 from '../assets/interior-images/Haircuts/Haircut 4.jpeg'
-import hair5 from '../assets/interior-images/Haircuts/Haircut 5.jpeg'
-import hair6 from '../assets/interior-images/Haircuts/Haircut 6.jpeg'
-import hair7 from '../assets/interior-images/Haircuts/Haircut 7.jpeg'
-import hair8 from '../assets/interior-images/Haircuts/Haircut 8.jpeg'
+// Dynamically import all images from the gallery-photos folder so
+// new photos can be added without editing this file.
+const modules = import.meta.glob(
+  "../assets/gallery-photos/*.{jpg,jpeg,png,webp}",
+  { eager: true },
+);
 
-const gallery = [
-  // { title: 'Precision Lineup', image: hair1 },
-  // { title: 'Precision Lineup', image: hair2 },
-  // { title: 'Precision Lineup', image: hair3 },
-  // { title: 'Precision Lineup', image: hair4 },
-  // { title: 'Precision Lineup', image: hair5 },
-  // { title: 'Precision Lineup', image: hair6 },
-  // { title: 'Precision Lineup', image: hair7 },
-  // { title: 'Precision Lineup', image: hair8 },
-]
+const gallery = Object.keys(modules).map((path) => {
+  const file = modules[path];
+  // Derive a friendly title from the filename
+  const parts = path.split("/");
+  const filename = parts[parts.length - 1];
+  const title = filename
+    .replace(/\.(jpg|jpeg|png|webp)$/i, "")
+    .replace(/[-_]/g, " ");
 
-export default gallery
+  return {
+    title: title,
+    image: file.default || file,
+    // leave room for a barber name; edit items manually if you want to add barbers
+    barber: "",
+  };
+});
+
+export default gallery;

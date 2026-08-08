@@ -22,11 +22,11 @@ function Contact() {
                   Book your next appointment.
                 </Typography>
                 <Typography color="text.secondary">
-                  2000 Columbus Pkwy unit 2010, Benicia, CA 94510
+                  2010 Columbus Pkwy, Benicia, CA 94510
                   <br />
                   Sunday - Monday: Closed <br />
-                  Tuesday - Friday 10:00 AM - 6:00 PM <br />
-                  Saturday 9:00 PM - 5:00 PM
+                  Tuesday - Friday: 10:00 AM - 6:00 PM <br />
+                  Saturday: 9:00 AM - 5:00 PM
                   <br />
                   (369)235-4364
                 </Typography>

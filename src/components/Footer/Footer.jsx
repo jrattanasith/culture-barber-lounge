@@ -26,7 +26,7 @@ function Footer() {
               Visit Us
             </Typography>
             <Typography color="text.secondary">
-              2010 Columbus Pkwy Unit
+              2010 Columbus Pkwy
               <br />
               Benicia, CA 94510
             </Typography>

@@ -43,29 +43,40 @@ function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            {/* <Typography variant="overline" color="primary">
-              Bencia Barber Shop
-            </Typography> */}
           </motion.div>
           <motion.div
             initial={{ opacity: 0, y: 24 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.9, delay: 0.1 }}
-          ></motion.div>
+          >
+            <Typography
+              variant="h1"
+              sx={{
+                fontSize: { xs: "3.2rem", md: "5.5rem" },
+                lineHeight: 0.95,
+              }}
+            >
+              Culture
+            </Typography>
+          </motion.div>
           <motion.div
             initial={{ opacity: 0, y: 24 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.9, delay: 0.2 }}
           >
-            {/* <Typography color="text.secondary" sx={{ fontSize: { xs: '1rem', md: '1.15rem' }, maxWidth: 560 }}>
-            </Typography> */}
+            <Typography
+              color="text.secondary"
+              sx={{ fontSize: { xs: "1rem", md: "1.15rem" }, maxWidth: 560 }}
+            >
+              Creativity • Consistency • Community <br />
+              Precision Cuts • Modern Grooming <br />
+            </Typography>
           </motion.div>
           <motion.div
             initial={{ opacity: 0, y: 24 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.9, delay: 0.3 }}
           >
-            <Stack direction={{ xs: "column", sm: "row" }} spacing={2}></Stack>
           </motion.div>
         </Stack>
       </Container>
