@@ -19,7 +19,7 @@ function GalleryMasonry({ onImageClick }) {
             <Box
               component="img"
               src={item.image}
-              alt={item.title}
+              alt={item.alt}
               sx={{
                 width: "100%",
                 display: "block",

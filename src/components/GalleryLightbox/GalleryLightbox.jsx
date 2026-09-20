@@ -3,11 +3,7 @@ import { AnimatePresence, motion } from "framer-motion";
 
 function GalleryLightbox({ selectedImage, onClose }) {
   return (
-    <Modal
-      open={Boolean(selectedImage)}
-      onClose={onClose}
-      closeAfterTransition
-    >
+    <Modal open={Boolean(selectedImage)} onClose={onClose} closeAfterTransition>
       <AnimatePresence>
         {selectedImage && (
           <motion.div
@@ -43,7 +39,7 @@ function GalleryLightbox({ selectedImage, onClose }) {
                 <Box
                   component="img"
                   src={selectedImage.image}
-                  alt={selectedImage.title}
+                  alt={selectedImage.alt}
                   sx={{
                     maxWidth: "100%",
                     maxHeight: "80vh",
@@ -52,12 +48,8 @@ function GalleryLightbox({ selectedImage, onClose }) {
                   }}
                 />
 
-                <Typography
-                  variant="h6"
-                  color="white"
-                  sx={{ mt: 2 }}
-                >
-                  {selectedImage.title}
+                <Typography variant="h6" color="white" sx={{ mt: 2 }}>
+                  {selectedImage.caption}
                 </Typography>
 
                 <Typography color="grey.400">
