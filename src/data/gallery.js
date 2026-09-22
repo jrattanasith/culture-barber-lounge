@@ -26,23 +26,32 @@ const captions = {
   "haircut 17": "Mid-drop skin fade with line-up",
 };
 
-const gallery = Object.keys(modules).map((path) => {
-  const file = modules[path];
-  // Derive a friendly title from the filename
-  const parts = path.split("/");
-  const filename = parts[parts.length - 1];
-  const title = filename
-    .replace(/\.(jpg|jpeg|png|webp)$/i, "")
-    .replace(/[-_]/g, " ");
+const gallery = Object.keys(modules)
+  .sort((a, b) => {
+    const getNumber = (path) => {
+      const match = path.match(/(\d+)(?:\.[^.]+)?$/);
+      return match ? Number(match[1]) : -Infinity;
+    };
 
-  return {
-    title: title,
-    alt: `${title} haircut at Culture Barber Lounge`,
-    caption: captions[title] || title,
-    image: file.default || file,
-    // leave room for a barber name; edit items manually if you want to add barbers
-    barber: "",
-  };
-});
+    return getNumber(b) - getNumber(a);
+  })
+  .map((path) => {
+    const file = modules[path];
+    // Derive a friendly title from the filename
+    const parts = path.split("/");
+    const filename = parts[parts.length - 1];
+    const title = filename
+      .replace(/\.(jpg|jpeg|png|webp)$/i, "")
+      .replace(/[-_]/g, " ");
+
+    return {
+      title: title,
+      alt: `${title} haircut at Culture Barber Lounge`,
+      caption: captions[title] || title,
+      image: file.default || file,
+      // leave room for a barber name; edit items manually if you want to add barbers
+      barber: "",
+    };
+  });
 
 export default gallery;
