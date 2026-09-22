@@ -1,6 +1,7 @@
 import andrewLi from '../assets/barber-photos/Andrew-Li.jpeg'
 import ericLaxamana from '../assets/barber-photos/Eric-Laxamana.jpeg'
 import nateDiaz from '../assets/barber-photos/Nate-Diaz.jpeg'
+import sterlingRussel from '../assets/barber-photos/Sterling-Russel.JPG'
 
 const team = [
   {
@@ -17,6 +18,11 @@ const team = [
     name: 'Nate Diaz',
     image: nateDiaz,
     booksy: 'http://blndzbynateculturebarberlounge.booksy.com/a/',
+  },
+  {
+    name: 'Sterling Russel',
+    image: sterlingRussel,
+    booksy: 'https://booksy.com/en-us/dl/show-business/925459',
   },
 ]
 
